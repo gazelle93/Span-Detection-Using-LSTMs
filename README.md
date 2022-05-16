@@ -37,3 +37,4 @@
 - Spacy: Matthew Honnibal and Ines Montani. 2017. spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing. To appear (2017).
 - NLTK: Bird, Steven, Edward Loper and Ewan Klein (2009). Natural Language Processing with Python. O'Reilly Media Inc.
 - Gensim: Rehurek, R., & Sojka, P. (2010). Software framework for topic modelling with large corpora. In In Proceedings of the LREC 2010 workshop on new challenges for NLP frameworks.
+- Sample data: Yang, X., Obadinma, S., Zhao, H., Zhang, Q., Matwin, S., & Zhu, X. (2020). SemEval-2020 task 5: Counterfactual recognition. arXiv preprint arXiv:2008.00563.
