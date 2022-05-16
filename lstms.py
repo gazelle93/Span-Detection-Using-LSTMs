@@ -29,9 +29,11 @@ class SpanDetectionLSTM(nn.Module):
         self.activation = nn.ReLU()
 
     def forward(self, _input):
-        for i in range(self.num_layers):
-            output, _ = self.lstm_layers[i](_input)
-            output = self.dropout(output)
+        output, _ = self.lstm_layers[i](_input)
+        if self.num_layers > 1:
+            for i in range(self.num_layers-1):
+                output, _ = self.lstm_layers[i+1](output)
+                output = self.dropout(output)
         output = self.activation(output)
         
         output = self.ff_layer(output)
